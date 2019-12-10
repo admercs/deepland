@@ -1,6 +1,6 @@
 # deepland
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2526396.svg)](https://doi.org/10.5281/zenodo.2526396)
+[![DOI](https://zenodo.org/badge/227004053.svg)](https://zenodo.org/badge/latestdoi/227004053)
 
 AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artificial intelligence in Earth system models](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/634946)
 
