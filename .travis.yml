@@ -1,6 +1,5 @@
 os:
 - linux
-- macos
 dist: xenial
 language:
 - python
