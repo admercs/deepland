@@ -4,6 +4,8 @@ AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artifici
 
 > Machine or deep learning represents a promising new way to represent processes in Earth system models. These models are fundamentally data-driven or pattern-based, whereby models are learned from data. This fills a critical gap in our current modeling abilities given the absence of process understanding to produce mechanistic or physical models. While machine/deep learning practitioners commonly use Python frameworks such as Scikit-Learn, TensorFlow, and PyTorch, component models of Earth systems are commonly implemented in low-level FORTRAN and may move toward C++ for its numerous industry-standard libraries. This divide between user-friendly high-level languages and high-performance low-level languages is known as the two-language problem. We address this problem by proposing the generation of a Python interface to C++ code using CMake and pybind11. This makes high-performance C++ classes and methods accessible to Python deep learning frameworks, allowing rapid prototyping of machine/deep learning process models.
 
+<img align="center" src="fcn32.png" alt="image">
+
 ### What is it?
 
 A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python)
