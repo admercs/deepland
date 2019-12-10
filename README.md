@@ -24,6 +24,6 @@ While C++ tests are specified using GoogleTest, the `unittest` library is used f
 
 Wrapping modern C++ in Python provides high-level and high-performance code, a sort of *have-your-cake-and-eat-it* for programmers concerned with performance. If your codebase is primarily  C rather than C++, similar functionality may be achieved using `Cython` rather than `pybind11`. Languages such as Julia and Numba address the so-called *two-lanuage problem* using the LLVM compiler infrastructure.
 
-## Shortcomings
+## Cost
 
 Added complexity and duplication, which `pybind11` minimizes compared to other approaches. While CMake is also complex, it effectively enables cross-platform support for C++.
