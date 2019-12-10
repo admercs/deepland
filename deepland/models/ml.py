@@ -1,0 +1,3 @@
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.linear_model import LinearRegression, Perceptron
