@@ -6,7 +6,7 @@ AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artifici
 
 ### What is it?
 
-This is a demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python)
+A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python)
 
 ### How does it work?
 
@@ -23,4 +23,3 @@ Wrapping modern C++ in Python provides high-level and high-performance code, a s
 ### At what cost?
 
 Added complexity and duplication, which pybind11 reduces compared to other approaches. While CMake is also complex, it greatly simplifies cross-platform support.
-
