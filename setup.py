@@ -120,7 +120,10 @@ setup(
     # and nowhere else
     #package_dir={'':'deepland'},
     # Add an extension module named 'ops' to the package 'deepland'
-    ext_modules=[CMakeExtension('deepland/ops')],
+    ext_modules=[
+        CMakeExtension('deepland/ops'),
+        CMakeExtension('deepland/classes')
+    ],
     # Add custom build_ext command
     cmdclass=dict(build_ext=CMakeBuild),
     zip_safe=False,

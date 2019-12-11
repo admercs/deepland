@@ -1,2 +1,10 @@
+# Build folders/files
+__pycache__/
+build/
+deepland.egg-info/
+tests/bin/
+deepland/*.so
+
+# User folders/files
 .DS_Store
 .vscode

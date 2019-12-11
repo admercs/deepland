@@ -25,19 +25,16 @@ set(SOURCE_DIR "src")
 include_directories("include")
 
 # List source files
-set(SOURCES "${SOURCE_DIR}/ops.cc")
-
-# Set output directories to Python package location
-#add_library(${PROJECT_NAME} STATIC ${SOURCES})
-#set(LIBRARY_OUTPUT_DIRECTORY ${PROJECT_NAME})
-#set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_NAME})
-#set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_NAME})
-#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_NAME})
+set(SOURCES
+  "${SOURCE_DIR}/ops.cc"
+  "${SOURCE_DIR}/classes.cc"
+)
 
 # pybind11
 add_subdirectory("lib/pybind11")
 
 pybind11_add_module("ops" SHARED ${SOURCES} "${SOURCE_DIR}/bindings_ops.cc")
+pybind11_add_module("classes" SHARED ${SOURCES} "${SOURCE_DIR}/bindings_classes.cc")
 
 # GoogleTest
 enable_testing()
@@ -50,7 +47,9 @@ set(TEST_DIR "tests")
 
 set(TEST_SOURCES
   "${TEST_DIR}/tests_main.cc"
-  "${TEST_DIR}/ops_test.cc")
+  "${TEST_DIR}/ops_test.cc"
+  "${TEST_DIR}/classes_test.cc"
+)
 
 # Prevent overriding the parent project's compiler/linker
 # settings on Windows
