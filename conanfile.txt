@@ -1,0 +1,6 @@
+[requires]
+pybind11/2.3.0@conan/stable
+gtest/1.10.0
+
+[generators]
+cmake
