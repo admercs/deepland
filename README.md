@@ -10,7 +10,7 @@ AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artifici
 
 ## What it is
 
-A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and benchmarking datasets.
+A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and benchmarking datasets. This approach can also be used with the `conan` package manager, which we omit here.
 
 ## How it works
 
@@ -22,8 +22,8 @@ While C++ tests are specified using GoogleTest, the `unittest` library is used f
 
 ## Why pybind11
 
-Wrapping modern C++ in Python provides high-level and high-performance code, a sort of *have-your-cake-and-eat-it* for programmers concerned with performance. If your codebase is primarily  C rather than C++, similar functionality may be achieved using `Cython` rather than `pybind11`. Languages such as Julia and Numba address the so-called *two-lanuage problem* using the LLVM compiler infrastructure.
+Wrapping modern C++ in Python provides high-level and high-performance code, a sort of *have-your-cake-and-eat-it* for programmers concerned with performance. If your codebase is primarily C rather than C++, similar functionality may be achieved using `Cython` rather than `pybind11`. Languages such as Julia and Python's Numba address the so-called 'two-lanuage problem' using the LLVM compiler infrastructure.
 
-## Cost
+## Caveats
 
-Added complexity and duplication, which `pybind11` minimizes compared to other approaches. While CMake is also complex, it effectively enables cross-platform support for C++.
+A fast Python interface comes at the cost of increased complexity and duplication, which `pybind11` minimizes compared to other approaches. Ultimately, `pybind11` interface addresses the two-language problem by adding a third language with its own syntax within C++. Testing frameworks such as GoogleTest add yet more domain-specific C++ syntax. Yet, such tools are indespensible for modern C++ programming. While CMake also adds complexity, it enables simplified cross-platform support.
