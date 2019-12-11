@@ -10,7 +10,7 @@ AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artifici
 
 ## What it is
 
-A simple demonstration project wrapping modern C++ with Python using pybind11 (C++/Python), CMake (C/C++), setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and fetching popular datasets. This approach can also be used with the [conan](https://conan.io/) package manager, which we omit here.
+A simple demonstration project wrapping modern C++ with Python using pybind11 (C++/Python), CMake (C/C++), setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and fetching popular datasets. For fans of the [conan](https://conan.io/) package manager, we have included a `conanfile.txt` configuration file.
 
 ## How it works
 
