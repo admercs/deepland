@@ -1,4 +1,4 @@
-# deepland - ALPHA RELEASE
+# deepland - A simple demonstration
 
 [![DOI](https://zenodo.org/badge/227004053.svg)](https://zenodo.org/badge/latestdoi/227004053) [![Build Status](https://travis-ci.org/adam-erickson/deepland.svg?branch=master)](https://travis-ci.org/adam-erickson/deepland)
 
