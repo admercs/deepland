@@ -10,7 +10,7 @@ AGU Fall 2019: [IN43A-02: A software framework for rapid prototyping of artifici
 
 ## What it is
 
-A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and fetching benchmark datasets.
+A simple demonstration project wrapping modern C++ with Python using pybind11 (hybrid), CMake, setuptools (Python), GoogleTest (C++), and unittest (Python). Included are Python tools for machine and deep learning, Google Earth Engine, and benchmark datasets.
 
 ## How it works
 
